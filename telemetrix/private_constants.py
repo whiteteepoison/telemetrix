@@ -38,9 +38,10 @@ class PrivateConstants:
     I2C_WRITE = 12
     SONAR_NEW = 13
     DHT_NEW = 14
-    STOP_ALL_REPORTS = 15
-    SET_ANALOG_SCANNING_INTERVAL = 16
-    ENABLE_ALL_REPORTS = 17
+    MBUS_NEW = 15
+    STOP_ALL_REPORTS = 16
+    SET_ANALOG_SCANNING_INTERVAL = 17
+    ENABLE_ALL_REPORTS = 18
 
     # reports
     # debug data from Arduino
@@ -91,3 +92,6 @@ class PrivateConstants:
     # DHT Report sub-types
     DHT_DATA = 0
     DHT_ERROR = 1
+    
+    # Max no. of Modbus devices allowed (using max485, so only 2)
+    MAX_MBUS = 2
